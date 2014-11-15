@@ -99,7 +99,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_codecs.xml:system/etc/media_codecs.xml \
     $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml \
     $(LOCAL_PATH)/configs/audio_policy.conf:system/etc/audio_policy.conf \
-    $(LOCAL_PATH)/configs/mixer_paths_0.xml:system/etc/mixer_paths_0.xml
+    $(LOCAL_PATH)/configs/mixer_paths_0.xml:system/etc/mixer_paths_0.xml \
+    $(LOCAL_PATH)/configs/fmas_eq.dat:system/etc/fmas_eq.dat \
+    $(LOCAL_PATH)/configs/RT5506:system/etc/RT5506 \
+    $(LOCAL_PATH)/configs/libfmas.so:system/lib/soundfx/libfmas.so
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/enctune.conf:system/etc/enctune.conf
