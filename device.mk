@@ -159,12 +159,6 @@ DEVICE_PACKAGE_OVERLAYS := \
     $(LOCAL_PATH)/overlays/overlay
 endif
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 2048
-TARGET_SCREEN_WIDTH := 1536
-# no bootanim match yet so let's override it.
-TARGET_BOOTANIMATION_NAME := 1080
-
 PRODUCT_TAGS += dalvik.gc.type-precise
 
 # NFC packages
@@ -237,7 +231,7 @@ PRODUCT_PACKAGES += \
 
 # for keyboard key mappings
 PRODUCT_PACKAGES += \
-	VolantisKeyboard
+    VolantisKeyboard
 
 # for launcher layout
 PRODUCT_PACKAGES += \
