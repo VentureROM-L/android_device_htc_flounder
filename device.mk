@@ -200,7 +200,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.bt.bdaddr_path=/sys/module/flounder_bdaddress/parameters/bdaddress \
     ro.frp.pst=/dev/block/platform/sdhci-tegra.3/by-name/PST \
     ro.ril.def.agps.mode=1 \
-    persist.tegra.compositor=glcomposer
+    persist.tegra.compositor=glcomposer \
+    camera.flash_off=0 \
+    drm.service.enabled=true \
+    ro.com.widevine.cachesize=16777216 \
+    fmas.spkr_6ch=35,20,110 \
+    fmas.spkr_2ch=35,25 \
+    fmas.spkr_angles=10 \
+    fmas.spkr_sgain=0 \
+    media.aac_51_output_enabled=true
 
 # setup dalvik vm configs.
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
